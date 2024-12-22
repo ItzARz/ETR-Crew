@@ -14,7 +14,7 @@ export function SidebarBrand() {
   return (
     <SidebarMenu>
       <SidebarMenuItem>
-        <div className="flex">
+        <a className="flex" href="/">
           {state === "collapsed"
             ? <img
                 src="./images/logo/isotipo.svg"
@@ -27,7 +27,7 @@ export function SidebarBrand() {
                 alt="ETR Logo"
               />
           }
-        </div>
+        </a>
       </SidebarMenuItem>
     </SidebarMenu>
   )
