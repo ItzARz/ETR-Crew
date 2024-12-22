@@ -3,7 +3,13 @@ module.exports = {
     darkMode: ["class"],
     content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
   theme: {
+	fontFamily: {
+		'sans': ['Inter', 'sans-serif'],
+	},
   	extend: {
+		boxShadow: {
+			'custom-box': '0px 3px 5px rgba(0, 0, 0, 0.04)',
+		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
