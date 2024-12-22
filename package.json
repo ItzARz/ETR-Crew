@@ -11,9 +11,9 @@
     "dev:frontend": "yarn workspace frontend dev",
     "dev:backend": "yarn workspace backend dev",
     "dev": "concurrently \"yarn dev:frontend\" \"yarn dev:backend\"",
-    "lint:frontend": "yarn workspace frontend lint",
     "build:backend": "yarn workspace backend build",
-    "build:frontend": "yarn workspace frontend build"
+    "build:frontend": "yarn workspace frontend build",
+    "lint:frontend": "yarn workspace frontend lint"
   },
   "dependencies": {
     "concurrently": "^9.1.0"
