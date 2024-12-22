@@ -9,6 +9,7 @@ import {
 import { StatsCard } from "@/components/ui/stats-card"
 import { Plane, Package, Clock, Spline, Users } from "lucide-react"
 import { Skeleton } from "@/components/ui/skeleton"
+import { MonthlyFlights } from "@/components/ui/montlyFlights-chart"
 
 export default function Page() {
   return (
@@ -60,8 +61,7 @@ export default function Page() {
           </div>
           <div className="grid gap-4 md:grid-cols-5">
             <div className="h-36 col-span-3 relative">
-              {/* Mapa o CTA para reservar */}
-              <Skeleton className="absolute inset-0 w-full h-full rounded-xl" />
+              <MonthlyFlights />
             </div>
             <div className="flex justify-between items-center h-36 col-span-2 p-6 rounded-lg shadow-custom-box">
               <div className="flex flex-col">
