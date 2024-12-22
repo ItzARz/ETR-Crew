@@ -1,5 +1,5 @@
 "use client"
-import { Bar, BarChart, CartesianGrid, XAxis } from "recharts"
+import { CartesianGrid, Line, LineChart, XAxis } from "recharts"
 
 import {
   Card,
@@ -15,50 +15,67 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart"
 const chartData = [
-  { month: "July", desktop: 186 },
-  { month: "August", desktop: 305 },
-  { month: "September", desktop: 237 },
-  { month: "October", desktop: 73 },
-  { month: "November", desktop: 209 },
-  { month: "December", desktop: 214 },
+  { month: "July", desktop: 186, mobile: 80 },
+  { month: "August", desktop: 305, mobile: 200 },
+  { month: "September", desktop: 237, mobile: 120 },
+  { month: "October", desktop: 73, mobile: 190 },
+  { month: "November", desktop: 209, mobile: 130 },
+  { month: "December", desktop: 214, mobile: 140 },
 ]
 
 const chartConfig = {
   desktop: {
-    label: "This month",
+    label: "Desktop",
+    color: "hsl(var(--chart-1))",
+  },
+  mobile: {
+    label: "This Month",
     color: "hsl(var(--chart-2))",
   },
 } satisfies ChartConfig
 
-export function MonthlyFlights() {
+export function MonthlyBudget() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Monthly Flights</CardTitle>
+        <CardTitle>Finance - Report</CardTitle>
         <CardDescription>July - December 2024</CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig}>
-          <BarChart
+          <LineChart
             accessibilityLayer
             data={chartData}
-            width={300}
-            height={100}
+            margin={{
+              left: 12,
+              right: 12,
+            }}
           >
             <CartesianGrid vertical={false} />
             <XAxis
               dataKey="month"
               tickLine={false}
-              tickMargin={10}
               axisLine={false}
+              tickMargin={8}
               tickFormatter={(value) => value.slice(0, 3)}
             />
             <ChartTooltip
               cursor={false}
               content={<ChartTooltipContent hideLabel />}
             />
-            <Bar dataKey="desktop" fill="var(--color-desktop)" radius={8} />
-          </BarChart>
+            <Line
+              dataKey="desktop"
+              type="natural"
+              stroke="var(--color-desktop)"
+              strokeWidth={2}
+              dot={{
+                fill: "var(--color-desktop)",
+              }}
+              activeDot={{
+                r: 6,
+              }}
+            />
+          </LineChart>
         </ChartContainer>
       </CardContent>
     </Card>
