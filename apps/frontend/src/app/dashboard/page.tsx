@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/sidebar"
 import { StatsCard } from "@/components/ui/stats-card"
 import { Plane, Package, FileClock, Spline, UsersRound } from "lucide-react"
-//import { Skeleton } from "@/components/ui/skeleton"
+import { Skeleton } from "@/components/ui/skeleton"
 import { MonthlyFlights } from "@/components/ui/charts/montlyFlights-chart"
 import { MonthlyBudget } from "@/components/ui/charts/monthlyBudget-chart"
 import { LeaderboardCard } from "@/components/leaderboardCard"
