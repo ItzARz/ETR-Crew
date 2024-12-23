@@ -15,70 +15,70 @@ interface Pilot {
 const pilots: Pilot[] = [
   {
     rank: 1,
-    name: "Carlos Rodriguez",
+    name: "Carlos R",
     callsign: "ETR102",
     hours: 156,
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop"
   },
   {
     rank: 2,
-    name: "Ana Martinez",
+    name: "Ana M",
     callsign: "ETR109",
     hours: 142,
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop"
   },
   {
     rank: 3,
-    name: "Juan Pérez",
+    name: "Juan P",
     callsign: "ETR105",
     hours: 128,
     avatar: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=150&h=150&fit=crop"
   },
   {
     rank: 4,
-    name: "María García",
+    name: "María G",
     callsign: "ETR101",
     hours: 115,
     avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop"
   },
   {
     rank: 5,
-    name: "Pedro Sánchez",
+    name: "Pedro S",
     callsign: "ETR104",
     hours: 98,
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop"
   },
   {
     rank: 6,
-    name: "Laura Torres",
+    name: "Laura T",
     callsign: "ETR115",
     hours: 92,
     avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop"
   },
   {
     rank: 7,
-    name: "Miguel Ángel",
+    name: "Miguel A",
     callsign: "ETR111",
     hours: 87,
     avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop"
   },
   {
     rank: 8,
-    name: "Isabel Ruiz",
+    name: "Isabel R",
     callsign: "ETR110",
     hours: 82,
     avatar: "https://images.unsplash.com/photo-1554151228-14d9def656e4?w=150&h=150&fit=crop"
   },
   {
     rank: 9,
-    name: "Roberto Fernández",
+    name: "Roberto F",
     callsign: "ETR108",
     hours: 76,
     avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop"
   },
   {
     rank: 10,
-    name: "Carmen López",
+    name: "Carmen L",
     callsign: "ETR106",
     hours: 71,
     avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop"
