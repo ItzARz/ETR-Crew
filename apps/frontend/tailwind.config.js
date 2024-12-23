@@ -8,7 +8,7 @@ module.exports = {
 	},
   	extend: {
 		boxShadow: {
-			'custom-box': '0px 3px 5px rgba(0, 0, 0, 0.04)',
+			'custom-box': '0px 3px 5px rgba(0, 0, 0, 0.06)',
 		},
   		borderRadius: {
   			lg: 'var(--radius)',
