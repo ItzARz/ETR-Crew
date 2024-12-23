@@ -17,6 +17,7 @@ export function LoginForm({
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <Card>
         <CardHeader className="text-center">
+          <img src="./images/logo/etr-imagotipo-light.png" alt="ETR Logo" />
           <CardTitle className="text-xl">Welcome back pilot 👋</CardTitle>
         </CardHeader>
         <CardContent>
