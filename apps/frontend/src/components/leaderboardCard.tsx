@@ -92,7 +92,7 @@ export const LeaderboardCard = () => {
         <CardTitle>Top Pilots</CardTitle>
         <Trophy className="w-5 h-5 text-blue-600" />
       </div>
-      <ScrollArea className="h-[350px]">
+      <ScrollArea className="h-[355px]">
         <Table>
           <TableHeader>
             <TableRow>
