@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
@@ -18,10 +17,7 @@ export function LoginForm({
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <Card>
         <CardHeader className="text-center">
-          <CardTitle className="text-xl">Welcome back</CardTitle>
-          <CardDescription>
-            Login with your Apple or Google account
-          </CardDescription>
+          <CardTitle className="text-xl">Welcome back pilot 👋</CardTitle>
         </CardHeader>
         <CardContent>
           <form>
