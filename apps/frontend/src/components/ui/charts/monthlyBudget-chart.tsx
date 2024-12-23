@@ -38,7 +38,7 @@ export function MonthlyBudget() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Finance - Report</CardTitle>
+        <CardTitle>Finances</CardTitle>
         <CardDescription>July - December 2024</CardDescription>
       </CardHeader>
       <CardContent>

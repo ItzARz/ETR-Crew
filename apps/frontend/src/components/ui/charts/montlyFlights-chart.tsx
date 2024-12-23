@@ -34,7 +34,7 @@ export function MonthlyFlights() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Airline Flights</CardTitle>
+        <CardTitle>Flights</CardTitle>
         <CardDescription>July - December 2024</CardDescription>
       </CardHeader>
       <CardContent>

@@ -1,19 +1,20 @@
-import { Card } from "@/components/ui/card";
+import { Card, CardTitle, CardDescription } from "@/components/ui/card";
 import { AirportTransferDialog } from "./airportTransfer-dialog";
-
-import { MapPinHouse } from "lucide-react"
+import { MapPinHouse } from "lucide-react";
 
 export const LocationTransfer = () => {
-    return (
-        <Card className="flex justify-between items-center gap-2 p-6 rounded-lg shadow-custom-box">
-            <MapPinHouse className="w-16 h-16 text-green-500" />
-            <div className="flex flex-col items-start align-middle mt-4">
-                <p className="text-4xl font-bold mb-1">SVMI</p>
-                <h3 className="text-md font-semibold mb-4">Current Location</h3>
-            </div>
-            <div className="ml-auto flex items-center">
-                <AirportTransferDialog />
-            </div>
-        </Card>
-    );
+  return (
+    <Card className="flex flex-col sm:flex-row items-center gap-4 p-6 rounded-lg shadow-custom-box">
+      <div className="flex-shrink-0">
+        <MapPinHouse className="text-green-500 w-12 h-12 sm:w-16 sm:h-16 md:hidden lg:block" />
+      </div>
+      <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
+        <CardTitle>SVMI</CardTitle>
+        <CardDescription className="font-semibold">Current Location</CardDescription>
+      </div>
+      <div className="sm:mt-0 sm:ml-auto">
+        <AirportTransferDialog />
+      </div>
+    </Card>
+  );
 };

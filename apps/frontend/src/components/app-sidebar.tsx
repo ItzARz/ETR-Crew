@@ -2,7 +2,7 @@ import * as React from "react"
 import {
   BookOpen,
   GalleryVerticalEnd,
-  SquareTerminal,
+  PlaneIcon
 } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
@@ -35,7 +35,7 @@ const data = {
     {
       title: "Flight Ops",
       url: "#",
-      icon: SquareTerminal,
+      icon: PlaneIcon,
       isActive: false,
       items: [
         {
