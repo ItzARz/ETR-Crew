@@ -1,0 +1,10 @@
+/*CREATE DATABASE etrv;*/
+
+USE etrv;
+
+CREATE TABLE pilots (
+  id VARCHAR(50) PRIMARY KEY,
+  callsign VARCHAR(50) NOT NULL UNIQUE,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL
+);
