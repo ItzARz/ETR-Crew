@@ -1,12 +1,10 @@
 import express from 'express';
-import cors from 'cors';
 import dotenv from 'dotenv';
-import authRoutes from './routes/authRoutes.js';
-//import { UserRepository } from './user-repository';
-
-import { API_PORT } from './config/index.js';
-
 dotenv.config();
+
+import cors from 'cors';
+import authRoutes from './routes/authRoutes.js';
+import { API_PORT } from './config/index.js';
 
 const app = express();
 
